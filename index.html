@@ -1,1 +1,326 @@
-<p>Hello</p>
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Instruction Foley</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+			<div id="wrapper" class="divided">
+
+
+					<section class="banner style1 orient-left content-align-center image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h2><strong>Instruction Foley: Multi-Instruction Foley for Video to Audio Generation</strong></h2>
+							<h3><strong>Anonymous</span></h3>	
+							
+					<section class="hero">
+								
+					
+					
+
+					<img src="images/figure1.png" style="width: 100%; height: auto;">
+					
+					<font size="5px"><strong>Vanilla Foley <i>v.s</i> Instruction-Foley</strong>: (a) Vanilla Foley, despite being a common foley manner, produces the entire audio only from video inputs once, demonstrating limitations in controllability and flexibility. (b) INSTRUCTION-FOLEY, in contrast, offers a more appealing alternative that employs multiple instructions to produce high-quality synchronized audio and can produce mixed audio in multi-stages, thereby exhibiting greater practical application.</font>
+					</section>
+					<br>
+				</section> 
+
+
+				<!-- <section class="wrapper style1 align-center">
+					<div class="inner">
+						<h3><strong>Traditional Foley &nbsp<i>v.s</i>&nbsp Neural Foley</strong></h3>
+						<span class="image main">
+							<img src="images/neural_foley.png">
+							<p>Traditional Foley, a time-consuming and labor-intensive process involving skilled artists manipulating objects to create hours of physical sounds for sound recording. In contrast, <b>Neural Foley</b> presents an appealing alternative utilizing neural networks to synthesize high-quality synchronized audio, accelerating video production and alleviating human workload.</p>
+						</span>
+					</div> 
+				</section> -->
+
+				<section class="wrapper style1 align-center">
+					<div class="inner">
+						<h2>Demos</h2>
+						<p><strong>It is recommended to use earphones to hear the demos videos, raise the volume and zoom in the videos.</strong>
+						<br>
+					</div>
+					<div class="items style1 small">
+						<section>
+							<h3>Ground Truth</h3>
+						</section>
+						<section>
+							<h3>SpecVQGAN</h3>
+						</section>
+						<section>
+							<h3>Diff-Foley</h3>
+						</section>
+						<section>
+							<h3>Instruction-Foley (Ours)</h3>
+						</section>
+					</div>
+					
+					<div class="items style1 small">
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video1/KKFdi5WQ0V0_000256_gt.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p>The train moving down the tracks, the train horn being blown, and the traffic lights changing colors, all of which contribute to the overall soundscape of the scene.</p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video1/KKFdi5WQ0V0_000256_SpecVQGAN.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video1/KKFdi5WQ0V0_000256_diff_foley.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video1/KKFdi5WQ0V0_000256_ours.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+					</div>
+
+					<div class="items style1 small">
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video2/WHPs1ypOoNc_000327_gt.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p>The ball being hit by a baseball bat, the players running and shouting during the game, and the movements of the players on the field.</p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video2/WHPs1ypOoNc_000327_SpecVQGAN.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video2/WHPs1ypOoNc_000327_diff_foley.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video2/WHPs1ypOoNc_000327_ours.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+					</div>
+
+					<div class="items style1 small">
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video3/105947_gt.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p>A goat vocalizing softly and then screaming loudly.</p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video3/105947_SpecVQGAN.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video3/105947_diff_foley.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video3/105947_ours.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+					</div>
+					
+					<div class="items style1 small">
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video4/107082_gt.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p>Crickets chirping very loudly.</p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video4/107082_SpecVQGAN.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video4/107082_diff_foley.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video4/107082_ours.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+					</div>
+
+					<div class="items style1 small">
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video5/106051_gt.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p>A helicopter is taking flight with the blades slapping.</p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video5/106051_SpecVQGAN.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video5/106051_diff_foley.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video5/106051_ours.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+					</div>
+
+					<div class="items style1 small">
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video6/105938_gt.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p>Camera muffling and wind blowing into a microphone as a vehicle engine runs while idle.</p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video6/105938_SpecVQGAN.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video6/105938_diff_foley.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video6/105938_ours.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+					</div>
+
+
+					<div class="items style1 small">
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video7/AWdrtR8qXYs_000260_gt.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p>A man is playing the violin in front of a crowd, and another man is playing the cello, both of them producing sound through their instruments as they perform for the audience.</p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video7/AWdrtR8qXYs_000260_SpecVQGAN.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video7/AWdrtR8qXYs_000260_diff_foley.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+						<section>
+							<span class="video">
+								<video controls class="html-video" width=100% height=auto>
+									<source src="videos/video7/AWdrtR8qXYs_000260_ours.mp4" type="video/mp4">
+								</video>
+							</span>
+							<p></p>
+						</section>
+					</div>
+
+					
+				
+
+			
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
